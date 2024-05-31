@@ -13,7 +13,7 @@ app.use(cors(
     }
 ));
 
-mongoose.connect("mongodb://127.0.0.1:27017/crudMern", {
+mongoose.connect("mongodb+srv://gma82960:AryanHarshal%40%23%24123@cluster0.0ykgggq.mongodb.net/crudMern", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
