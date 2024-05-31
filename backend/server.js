@@ -6,7 +6,7 @@ const User = require('./models/userModel');
 const cors= require('cors');
 app.use(cors());
 
-mongoose.connect("mongodb+srv://gma82960:AryanHarshal%40%23%24123@cluster0.0ykgggq.mongodb.net/crudMern", {
+mongoose.connect("mongodb+srv://harsharyan1710:yl2vGBDJsxi9YRH1@cluster0.ce3gj.mongodb.net//crudMern", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
