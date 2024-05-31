@@ -33,6 +33,14 @@ app.get('/test', (req, res) => {
     res.json({ message: "Test route working!" });
 });
 
+
+app.get('/db-status', (req, res) => {
+    const connectionStatus = mongoose.connection.readyState;
+    const statusMessage = connectionStatus === 1 ? "connected" : "not connected";
+    res.json({ status: statusMessage, connectionStatus });
+});
+
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
