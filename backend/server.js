@@ -4,14 +4,7 @@ const userRoute= require('./routes/userRoute');
 const mongoose = require('mongoose');
 const User = require('./models/userModel');
 const cors= require('cors');
-app.use(cors(
-
-    {
-        origin:{["https://crud-app-mern-api-lemon.vercel.app"],
-                methods:["POST" ,"GET" , "PATCH"],
-                credentials: true
-    }
-));
+app.use(cors());
 
 mongoose.connect("mongodb+srv://gma82960:AryanHarshal%40%23%24123@cluster0.0ykgggq.mongodb.net/crudMern", {
     useNewUrlParser: true,
