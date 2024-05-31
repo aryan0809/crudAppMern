@@ -4,7 +4,14 @@ const userRoute= require('./routes/userRoute');
 const mongoose = require('mongoose');
 const User = require('./models/userModel');
 const cors= require('cors');
-app.use(cors());
+app.use(cors(
+
+    {
+        origin:{["https://deploy-mern-1wq.vercel.app"],
+                methods:["POST" ,"GET" , "PATCH"],
+                credentials: true
+    }
+));
 
 mongoose.connect("mongodb://127.0.0.1:27017/crudMern", {
     useNewUrlParser: true,
