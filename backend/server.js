@@ -7,7 +7,7 @@ const cors= require('cors');
 app.use(cors(
 
     {
-        origin:{["https://deploy-mern-1wq.vercel.app"],
+        origin:{["https://crud-app-mern-api-lemon.vercel.app"],
                 methods:["POST" ,"GET" , "PATCH"],
                 credentials: true
     }
