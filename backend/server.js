@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
     res.send("Hello world");
 });
 
+app.get('/test', (req, res) => {
+    res.json({ message: "Test route working!" });
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
