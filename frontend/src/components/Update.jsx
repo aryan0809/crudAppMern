@@ -13,8 +13,7 @@ function Update() {
     useEffect(() => {
         async function fetchUser() {
             try {
-                const response = await fetch(`crud-app-mern-gray.vercel.app
-/${id}`);
+                const response = await fetch(`https://crud-app-mern-gray.vercel.app/${id}`);
                 const result = await response.json();
                 if (response.ok) {
                     setName(result.name);
