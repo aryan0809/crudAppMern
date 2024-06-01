@@ -12,7 +12,7 @@ app.use(cors(
     }
 ));
 
-mongoose.connect("mongodb+srv://harsharyan1710:yl2vGBDJsxi9YRH1@cluster0.ce3gj.mongodb.net/crudMern", {
+mongoose.connect("mongodb+srv://harsharyan1710:yl2vGBDJsxi9YRH1@cluster0.ce3gj.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
