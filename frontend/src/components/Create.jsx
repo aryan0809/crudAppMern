@@ -18,8 +18,7 @@ function Create() {
         const profilePic = generator.generateRandomAvatar();
         const addUser = { name, email, age, profilePic };
 
-        const response = await fetch("crud-app-mern-gray.vercel.app
-/user", {
+        const response = await fetch("https://crud-app-mern-gray.vercel.app/user", {
             method: 'POST',
             body: JSON.stringify(addUser),
             headers: {
