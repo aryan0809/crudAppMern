@@ -22,14 +22,7 @@ function Create() {
         const profilePic = generator.generateRandomAvatar();
         const addUser = { name, email, age, profilePic };
 
-        const response = await fetch("import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
-/user", {
+        const response = await fetch("https://crud-app-mern-git-master-aryan-yadavs-projects-b7658d44.vercel.app/user", {
             method: 'POST',
             body: JSON.stringify(addUser),
             headers: {
