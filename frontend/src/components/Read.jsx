@@ -8,8 +8,7 @@ function Read() {
 
     async function getData() {
         try {
-            const response = await fetch("crud-app-mern-gray.vercel.app
-/user");
+            const response = await fetch("https://crud-app-mern-gray.vercel.app/user");
             const result = await response.json();
             console.log("Fetched Data:", result); // Debug log
             if (response.ok) {
